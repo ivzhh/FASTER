@@ -1,9 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
-    <Platforms>x64</Platforms>
+    <TargetFrameworks>net46</TargetFrameworks>
+    <Platforms>AnyCPU;x64</Platforms>
     <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <DefineConstants>$(DefineConstants);BLIT_KEY;GENERIC_BLIT_KEY;BLIT_VALUE;GENERIC_BLIT_VALUE;BLIT_INPUT;GENERIC_BLIT_INPUT;BLIT_OUTPUT;GENERIC_BLIT_OUTPUT</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
+    <Platforms>AnyCPU;x64</Platforms>
     <DefineConstants>$(DefineConstants);BLIT_KEY;GENERIC_BLIT_KEY;BLIT_VALUE;GENERIC_BLIT_VALUE;BLIT_INPUT;GENERIC_BLIT_INPUT;BLIT_OUTPUT;GENERIC_BLIT_OUTPUT</DefineConstants>
   </PropertyGroup>
 

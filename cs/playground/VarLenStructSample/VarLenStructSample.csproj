@@ -1,18 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net46</TargetFramework>
-    <Platforms>x64</Platforms>
-    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
+    <TargetFrameworks>net46</TargetFrameworks>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <RootNamespace>StructSample</RootNamespace>
+    <RootNamespace>VarLenStructSample</RootNamespace>
     <ErrorReport>prompt</ErrorReport>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">

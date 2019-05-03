@@ -1,7 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net46;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>net46</TargetFrameworks>
+    <Platforms>AnyCPU;x64</Platforms>
+    <HighEntropyVA>true</HighEntropyVA>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
     <Platforms>AnyCPU;x64</Platforms>
     <HighEntropyVA>true</HighEntropyVA>
   </PropertyGroup>
